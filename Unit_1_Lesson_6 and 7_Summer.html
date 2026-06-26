@@ -149,11 +149,43 @@
             margin-bottom: 30px;
         }
 
+        .math-render-viewport {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .math-tov {
+            border-collapse: collapse;
+            font-size: 1.1rem;
+            font-weight: 600;
+            min-width: 220px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .math-tov th, .math-tov td {
+            border: 2px solid var(--primary-color);
+            padding: 10px 20px;
+        }
+
+        .math-tov th {
+            background-color: #f1f5f9;
+            color: var(--primary-color);
+            font-weight: 800;
+        }
+
         .question-statement-card {
             background: #ffffff;
             border-left: 4px solid var(--secondary-color);
             padding: 16px 20px;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 600;
             color: var(--primary-color);
             margin-bottom: 20px;
@@ -421,6 +453,8 @@
             </div>
 
             <div id="quiz-station" class="quiz-interface-box" style="display: none;">
+                <div id="asset-viewport-mount-point" class="math-render-viewport" style="display: none;"></div>
+
                 <div id="question-statement-display" class="question-statement-card"></div>
 
                 <label id="input-prompt-label" style="margin-bottom: 12px; font-weight: 700; display: block;"></label>
@@ -454,7 +488,7 @@
         const answerRegistry = {
             u1l67_t1q1: "B", u1l67_t1q2: "A", u1l67_t1q3: "C",
             u1l67_t2q1: "A", u1l67_t2q2: "B", u1l67_t2q3: "A",
-            u1l67_t3q1: "C", u1l67_t3q2: "A", u1l67_t3q3: "B",
+            u1l67_t3q1: "B", u1l67_t3q2: "A", u1l67_t3q3: "B",
             u1l67_t4q1: "B", u1l67_t4q2: "A", u1l67_t4q3: "C"
         };
 
@@ -499,13 +533,13 @@
                 title: "Type 2 Question 1",
                 fullStatement: "Determine the zeros (solutions) to the following quadratic relation:<br>$$\\small y = 2x^2 - 7x + 4$$",
                 prompt: "Select the correct solutions rounded to two decimal places:",
-                options: ["A) x = 2.78 and x = 0.42", "B) x = -2.78 and x = -0.42", "C) No real solutions"],
+                options: ["A) x = 2.78 and x = 0.72", "B) x = -2.78 and x = -0.42", "C) No real solutions"],
                 hint: "Apply the complete Quadratic Formula: \\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\).",
                 steps: [
                     { title: "Step 1: Set up the formula variables", math: "a = 2,\\quad b = -7,\\quad c = 4", explanation: "Map the coefficients out clearly before initiating calculations." },
                     { title: "Step 2: Solve inside the square root path", math: "b^2 - 4ac = (-7)^2 - 4(2)(4) = 49 - 32 = 17", explanation: "The core interior discriminant evaluates to 17." },
                     { title: "Step 3: Construct the fractional expression", math: "x = \\frac{-(-7) \\pm \\sqrt{17}}{2(2)} = \\frac{7 \\pm 4.1231}{4}", explanation: "Evaluate the square root of 17 into decimal values." },
-                    { title: "Step 4: Branch into separate values", math: "x_1 = \\frac{7 + 4.1231}{4} \\approx 2.78,\\quad x_2 = \\frac{7 - 4.1231}{4} \\approx 0.42", explanation: "Compute both paths to achieve the final root decimals." }
+                    { title: "Step 4: Branch into separate values", math: "x_1 = \\frac{7 + 4.1231}{4} \\approx 2.78,\\quad x_2 = \\frac{7 - 4.1231}{4} \\approx 0.72", explanation: "Compute both paths to achieve the final root decimals." }
                 ], ans: "A"
             },
             u1l67_t2q2: {
@@ -542,10 +576,10 @@
                 hint: "Factor out \\(-1\\) first to make the trinomial easier to manage, then find the factors.",
                 steps: [
                     { title: "Step 1: Set equation to zero and isolate signs", math: "-1(2x^2 - x - 15) = 0", explanation: "Pulling out the negative scalar reveals the interior complex trinomial target structure." },
-                    { title: "Step 2: Factor the trinomial component", math: "-(2x - 5)(x + 3) = 0", explanation: "Look for parameters that satisfy product-sum matrix conditions down columns." },
-                    { title: "Step 3: Set each factor branch to zero", math: "2x - 5 = 0 \\quad\\Rightarrow\\quad 2x = 5 \\quad\\Rightarrow\\quad x = 2.5", explanation: "Isolate variable parameters across the first equation bracket block." },
-                    { title: "Step 4: Set the second bracket block to zero", math: "x + 3 = 0 \\quad\\Rightarrow\\quad x = -3", explanation: "Isolate the second root value to complete the set." }
-                ], ans: "C"
+                    { title: "Step 2: Factor the trinomial component", math: "-(2x + 5)(x - 3) = 0", explanation: "Look for parameters that satisfy product-sum matrix conditions down columns." },
+                    { title: "Step 3: Set each factor branch to zero", math: "2x + 5 = 0 \\quad\\Rightarrow\\quad 2x = -5 \\quad\\Rightarrow\\quad x = -2.5", explanation: "Isolate variable parameters across the first equation bracket block." },
+                    { title: "Step 4: Set the second bracket block to zero", math: "x - 3 = 0 \\quad\\Rightarrow\\quad x = 3", explanation: "Isolate the second root value to complete the set." }
+                ], ans: "B"
             },
             u1l67_t3q2: {
                 title: "Type 3 Question 2",
@@ -647,12 +681,14 @@
             var __hb = document.getElementById("hint-box"); if (__hb) __hb.style.display = "none";
             const placeholder = document.getElementById("placeholder");
             const quizStation = document.getElementById("quiz-station");
+            const assetMount = document.getElementById("asset-viewport-mount-point");
             const mountPoint = document.getElementById("dynamic-input-mount-point");
             const promptLabel = document.getElementById("input-prompt-label");
 
             if (activeQuestionId === "") {
                 placeholder.style.display = "block";
                 quizStation.style.display = "none";
+                assetMount.style.display = "none";
                 return;
             }
 
@@ -661,6 +697,13 @@
             
             const activeProblem = problemDataPack[activeQuestionId];
             const state = questionStates[activeQuestionId];
+
+            if (activeProblem.assetType && activeProblem.assetType !== "none") {
+                assetMount.style.display = "flex";
+                assetMount.innerHTML = activeProblem.assetHtml;
+            } else {
+                assetMount.style.display = "none";
+            }
 
             document.getElementById("question-statement-display").innerHTML = activeProblem.fullStatement;
             promptLabel.innerHTML = activeProblem.prompt;
