@@ -592,10 +592,10 @@
                 hint: "Find two numbers that multiply to -24 and add to 2. Because the product is negative, one number is positive and one is negative.",
                 prompt: "Pick the correct pair of numbers:",
                 options: ["A) -6 and 4", "B) 6 and 4", "C) 6 and -4", "D) -6 and -4"],
-                expression: "Product = -24, Sum = +2",
-                ps_list: "Factor pairs of -24: (1,-24), (2,-12), (3,-8), (4,-6), (6,-4)", ps_val: "6 × (-4) = -24 and 6 + (-4) = 2",
-                cc_logic: "Product is negative, so the signs are opposite. Sum is positive, so the bigger number is positive.", cc_apply: "Try 6 and -4:  6 + (-4) = 2",
-                ans_box: "6 and -4", ans: "C"
+                expression: "Product = -24, \\ \\text{Sum} = +2",
+                ps_list: "\\{(1,-24), (2,-12), (3,-8), (4,-6), (6,-4)\\}", ps_val: "6 \\times (-4) = -24 \\ \\text{and} \\ 6 + (-4) = 2",
+                cc_logic: "\\text{Product } < 0 \\Rightarrow \\text{opposite signs. } \\text{Sum } > 0 \\Rightarrow \\text{larger magnitude is positive.}", cc_apply: "\\text{Testing factors: } 6 + (-4) = 2",
+                ans_box: "6 \\ \\text{and} \\ -4", ans: "C"
             },
             u1l4_t1q2: {
                 title: "Type 1 Question 2: Multiply to -30 and Add to 1", type: "numbers", 
@@ -603,10 +603,10 @@
                 hint: "Find two numbers that multiply to -30 and add to 1.",
                 prompt: "Pick the correct pair of numbers:",
                 options: ["A) 6 and 5", "B) -6 and 5", "C) 6 and -5", "D) -6 and -5"],
-                expression: "Product = -30, Sum = +1",
-                ps_list: "Factor pairs of -30: (1,-30), (2,-15), (3,-10), (5,-6), (6,-5)", ps_val: "6 × (-5) = -30 and 6 + (-5) = 1",
-                cc_logic: "Product is negative, so the signs are opposite. Sum is +1, so the two numbers are one apart.", cc_apply: "The pair 5 and 6 works:  6 and -5",
-                ans_box: "6 and -5", ans: "C"
+                expression: "Product = -30, \\ \\text{Sum} = +1",
+                ps_list: "\\{(1,-30), (2,-15), (3,-10), (5,-6), (6,-5)\\}", ps_val: "6 \\times (-5) = -30 \\ \\text{and} \\ 6 + (-5) = 1",
+                cc_logic: "\\text{Product } < 0 \\Rightarrow \\text{opposite signs. } \\text{Sum } = +1 \\Rightarrow \\text{integers have a difference of 1.}", cc_apply: "\\text{Validating pairs: } 6 \\ \\text{and} \\ -5",
+                ans_box: "6 \\ \\text{and} \\ -5", ans: "C"
             },
             u1l4_t1q3: {
                 title: "Type 1 Question 3: Multiply to -12 and Add to 4", type: "numbers", 
@@ -614,10 +614,10 @@
                 hint: "Find two numbers that multiply to -12 and add to 4.",
                 prompt: "Pick the correct pair of numbers:",
                 options: ["A) 6 and 2", "B) 6 and -2", "C) -6 and 2", "D) -6 and -2"],
-                expression: "Product = -12, Sum = +4",
-                ps_list: "Factor pairs of -12: (1,-12), (2,-6), (3,-4), (4,-3), (6,-2)", ps_val: "6 × (-2) = -12 and 6 + (-2) = 4",
-                cc_logic: "Product is negative, so the signs are opposite. Sum is +4, so the bigger number is positive.", cc_apply: "Try 6 and -2:  6 + (-2) = 4",
-                ans_box: "6 and -2", ans: "B"
+                expression: "Product = -12, \\ \\text{Sum} = +4",
+                ps_list: "\\{(1,-12), (2,-6), (3,-4), (4,-3), (6,-2)\\}", ps_val: "6 \\times (-2) = -12 \\ \\text{and} \\ 6 + (-2) = 4",
+                cc_logic: "\\text{Product } < 0 \\Rightarrow \\text{opposite signs. } \\text{Sum } > 0 \\Rightarrow \\text{larger factor is positive.}", cc_apply: "\\text{Testing factors: } 6 + (-2) = 4",
+                ans_box: "6 \\ \\text{and} \\ -2", ans: "B"
             },
             u1l4_t2q1: {
                 title: "Type 2 Question 1: Fully Factor x² + 7x + 12", type: "trinomial", 
@@ -625,8 +625,8 @@
                 hint: "Find two numbers that multiply to 12 and add to 7.",
                 prompt: "Pick the fully factored form:",
                 options: ["A) (x + 3)(x + 4)", "B) (x + 2)(x + 6)", "C) (x - 3)(x - 4)", "D) (x + 1)(x + 12)"],
-                expression: "1x² + 7x + 12", var: "x",
-                ps_mult: "+12", ps_add: "+7", ps_nums: "<strong>+3</strong> and <strong>+4</strong>",
+                expression: "1x^2 + 7x + 12", var: "x",
+                ps_mult: "12", ps_add: "7", ps_nums: "3 \\ \\text{and} \\ 4",
                 cc_lt: "x", cc_lb: "x", cc_rt: "+3", cc_rb: "+4", cc_pt: "+4x", cc_pb: "+3x", cc_sum: "+7x",
                 ans_box: "(x + 3)(x + 4)", row1_f: "x + 3", row2_f: "x + 4", ans: "A"
             },
@@ -636,8 +636,8 @@
                 hint: "Find two numbers that multiply to 20 and add to 9.",
                 prompt: "Pick the fully factored form:",
                 options: ["A) (x + 2)(x + 10)", "B) (x + 4)(x + 5)", "C) (x - 4)(x - 5)", "D) (x + 1)(x + 20)"],
-                expression: "1x² + 9x + 20", var: "x",
-                ps_mult: "+20", ps_add: "+9", ps_nums: "<strong>+4</strong> and <strong>+5</strong>",
+                expression: "1x^2 + 9x + 20", var: "x",
+                ps_mult: "20", ps_add: "9", ps_nums: "4 \\ \\text{and} \\ 5",
                 cc_lt: "x", cc_lb: "x", cc_rt: "+4", cc_rb: "+5", cc_pt: "+5x", cc_pb: "+4x", cc_sum: "+9x",
                 ans_box: "(x + 4)(x + 5)", row1_f: "x + 4", row2_f: "x + 5", ans: "B"
             },
@@ -647,8 +647,8 @@
                 hint: "Find two numbers that multiply to 15 and add to 8.",
                 prompt: "Pick the fully factored form:",
                 options: ["A) (x + 1)(x + 15)", "B) (x + 2)(x + 6)", "C) (x - 3)(x - 5)", "D) (x + 3)(x + 5)"],
-                expression: "1x² + 8x + 15", var: "x",
-                ps_mult: "+15", ps_add: "+8", ps_nums: "<strong>+3</strong> and <strong>+5</strong>",
+                expression: "1x^2 + 8x + 15", var: "x",
+                ps_mult: "15", ps_add: "8", ps_nums: "3 \\ \\text{and} \\ 5",
                 cc_lt: "x", cc_lb: "x", cc_rt: "+3", cc_rb: "+5", cc_pt: "+5x", cc_pb: "+3x", cc_sum: "+8x",
                 ans_box: "(x + 3)(x + 5)", row1_f: "x + 3", row2_f: "x + 5", ans: "D"
             },
@@ -658,9 +658,9 @@
                 hint: "Complex trinomial: find two numbers that multiply to a × c = 3 × (-5) = -15 and add to -2.",
                 prompt: "Pick the fully factored form:",
                 options: ["A) (3x - 5)(x + 1)", "B) (3x + 5)(x - 1)", "C) (3x - 1)(x + 5)", "D) (3x + 1)(x - 5)"],
-                expression: "3x² - 2x - 5", var: "x",
-                ps_mult: "3 × (-5) = -15", ps_add: "-2", ps_nums: "<strong>-5</strong> and <strong>+3</strong>",
-                ps_split: "3x² + 3x - 5x - 5 = 3x(x + 1) - 5(x + 1)",
+                expression: "3x^2 - 2x - 5", var: "x",
+                ps_mult: "3 \\times (-5) = -15", ps_add: "-2", ps_nums: "-5 \\ \\text{and} \\ 3",
+                ps_split: "3x^2 + 3x - 5x - 5 = 3x(x + 1) - 5(x + 1)",
                 cc_lt: "3x", cc_lb: "x", cc_rt: "-5", cc_rb: "+1", cc_pt: "+3x", cc_pb: "-5x", cc_sum: "-2x",
                 ans_box: "(3x - 5)(x + 1)", row1_f: "3x - 5", row2_f: "x + 1", ans: "A"
             },
@@ -670,9 +670,9 @@
                 hint: "Find two numbers that multiply to 2 × (-3) = -6 and add to 5.",
                 prompt: "Pick the fully factored form:",
                 options: ["A) (2x + 1)(x - 3)", "B) (2x - 1)(x + 3)", "C) (2x - 3)(x + 1)", "D) (2x + 3)(x - 1)"],
-                expression: "2x² + 5x - 3", var: "x",
-                ps_mult: "2 × (-3) = -6", ps_add: "+5", ps_nums: "<strong>+6</strong> and <strong>-1</strong>",
-                ps_split: "2x² + 6x - x - 3 = 2x(x + 3) - 1(x + 3)",
+                expression: "2x^2 + 5x - 3", var: "x",
+                ps_mult: "2 \\times (-3) = -6", ps_add: "+5", ps_nums: "6 \\ \\text{and} \\ -1",
+                ps_split: "2x^2 + 6x - x - 3 = 2x(x + 3) - 1(x + 3)",
                 cc_lt: "2x", cc_lb: "x", cc_rt: "-1", cc_rb: "+3", cc_pt: "+6x", cc_pb: "-1x", cc_sum: "+5x",
                 ans_box: "(2x - 1)(x + 3)", row1_f: "2x - 1", row2_f: "x + 3", ans: "B"
             },
@@ -682,9 +682,9 @@
                 hint: "Find two numbers that multiply to 3 × (-2) = -6 and add to -5.",
                 prompt: "Pick the fully factored form:",
                 options: ["A) (3x - 1)(x + 2)", "B) (3x + 2)(x - 1)", "C) (3x + 1)(x - 2)", "D) (3x - 2)(x + 1)"],
-                expression: "3x² - 5x - 2", var: "x",
-                ps_mult: "3 × (-2) = -6", ps_add: "-5", ps_nums: "<strong>-6</strong> and <strong>+1</strong>",
-                ps_split: "3x² - 6x + x - 2 = 3x(x - 2) + 1(x - 2)",
+                expression: "3x^2 - 5x - 2", var: "x",
+                ps_mult: "3 \\times (-2) = -6", ps_add: "-5", ps_nums: "-6 \\ \\text{and} \\ 1",
+                ps_split: "3x^2 - 6x + x - 2 = 3x(x - 2) + 1(x - 2)",
                 cc_lt: "3x", cc_lb: "x", cc_rt: "+1", cc_rb: "-2", cc_pt: "-6x", cc_pb: "+1x", cc_sum: "-5x",
                 ans_box: "(3x + 1)(x - 2)", row1_f: "3x + 1", row2_f: "x - 2", ans: "C"
             },
@@ -694,10 +694,10 @@
                 hint: "Take out the GCF (6) first, then factor the simpler trinomial inside.",
                 prompt: "Pick the fully factored form:",
                 options: ["A) 6(2x - 5)(x - 1)", "B) (12x + 30)(x + 1)", "C) 3(4x + 10)(x + 1)", "D) 6(2x + 5)(x + 1)"],
-                gcf: "6", expression: "2x² + 7x + 5", var: "x",
-                num1: "12x²", num2: "42x", num3: "30",
-                ps_mult: "2 × 5 = 10", ps_add: "+7", ps_nums: "<strong>+2</strong> and <strong>+5</strong>",
-                ps_split: "2x² + 2x + 5x + 5 = 2x(x + 1) + 5(x + 1)",
+                gcf: "6", expression: "2x^2 + 7x + 5", var: "x",
+                num1: "12x^2", num2: "42x", num3: "30",
+                ps_mult: "2 \\times 5 = 10", ps_add: "+7", ps_nums: "2 \\ \\text{and} \\ 5",
+                ps_split: "2x^2 + 2x + 5x + 5 = 2x(x + 1) + 5(x + 1)",
                 cc_lt: "2x", cc_lb: "x", cc_rt: "+5", cc_rb: "+1", cc_pt: "+2x", cc_pb: "+5x", cc_sum: "+7x",
                 ans_box: "6(2x + 5)(x + 1)", row1_f: "2x + 5", row2_f: "x + 1", ans: "D"
             },
@@ -707,10 +707,10 @@
                 hint: "Take out the GCF (4) first, then factor the trinomial inside.",
                 prompt: "Pick the fully factored form:",
                 options: ["A) 2(4x + 6)(x + 2)", "B) (8x + 12)(x + 2)", "C) 4(2x + 3)(x + 2)", "D) 4(2x - 3)(x - 2)"],
-                gcf: "4", expression: "2x² + 7x + 6", var: "x",
-                num1: "8x²", num2: "28x", num3: "24",
-                ps_mult: "2 × 6 = 12", ps_add: "+7", ps_nums: "<strong>+4</strong> and <strong>+3</strong>",
-                ps_split: "2x² + 4x + 3x + 6 = 2x(x + 2) + 3(x + 2)",
+                gcf: "4", expression: "2x^2 + 7x + 6", var: "x",
+                num1: "8x^2", num2: "28x", num3: "24",
+                ps_mult: "2 \\times 6 = 12", ps_add: "+7", ps_nums: "4 \\ \\text{and} \\ 3",
+                ps_split: "2x^2 + 4x + 3x + 6 = 2x(x + 2) + 3(x + 2)",
                 cc_lt: "2x", cc_lb: "x", cc_rt: "+3", cc_rb: "+2", cc_pt: "+4x", cc_pb: "+3x", cc_sum: "+7x",
                 ans_box: "4(2x + 3)(x + 2)", row1_f: "2x + 3", row2_f: "x + 2", ans: "C"
             },
@@ -720,10 +720,10 @@
                 hint: "Take out the GCF (9) first, then factor the trinomial inside.",
                 prompt: "Pick the fully factored form:",
                 options: ["A) (18x + 9)(x + 2)", "B) 9(2x + 1)(x + 2)", "C) 9(2x - 1)(x - 2)", "D) 3(6x + 3)(x + 2)"],
-                gcf: "9", expression: "2x² + 5x + 2", var: "x",
-                num1: "18x²", num2: "45x", num3: "18",
-                ps_mult: "2 × 2 = 4", ps_add: "+5", ps_nums: "<strong>+4</strong> and <strong>+1</strong>",
-                ps_split: "2x² + 4x + x + 2 = 2x(x + 2) + 1(x + 2)",
+                gcf: "9", expression: "2x^2 + 5x + 2", var: "x",
+                num1: "18x^2", num2: "45x", num3: "18",
+                ps_mult: "2 \\times 2 = 4", ps_add: "+5", ps_nums: "4 \\ \\text{and} \\ 1",
+                ps_split: "2x^2 + 4x + x + 2 = 2x(x + 2) + 1(x + 2)",
                 cc_lt: "2x", cc_lb: "x", cc_rt: "+1", cc_rb: "+2", cc_pt: "+4x", cc_pb: "+1x", cc_sum: "+5x",
                 ans_box: "9(2x + 1)(x + 2)", row1_f: "2x + 1", row2_f: "x + 2", ans: "B"
             },
@@ -733,9 +733,9 @@
                 hint: "The length and width are the factors of the area. Find two numbers that multiply to 5 × 9 = 45 and add to -18.",
                 prompt: "Pick the correct dimensions (length × width):",
                 options: ["A) A = (5x + 3)(x + 3)", "B) A = (5x - 3)(x - 3)", "C) A = (5x - 1)(x - 9)", "D) A = (5x + 1)(x - 9)", "E) x = 3 and x = ⅗"],
-                expression: "5x² - 18x + 9", var: "x",
-                ps_mult: "5 × 9 = 45", ps_add: "-18", ps_nums: "<strong>-15</strong> and <strong>-3</strong>",
-                ps_split: "5x² - 15x - 3x + 9 = 5x(x - 3) - 3(x - 3)",
+                expression: "5x^2 - 18x + 9", var: "x",
+                ps_mult: "5 \\times 9 = 45", ps_add: "-18", ps_nums: "-15 \\ \\text{and} \\ -3",
+                ps_split: "5x^2 - 15x - 3x + 9 = 5x(x - 3) - 3(x - 3)",
                 cc_lt: "5x", cc_lb: "x", cc_rt: "-3", cc_rb: "-3", cc_pt: "-15x", cc_pb: "-3x", cc_sum: "-18x",
                 ans_box: "A = (5x - 3)(x - 3)", row1_f: "5x - 3", row2_f: "x - 3", ans: "B"
             },
@@ -745,9 +745,9 @@
                 hint: "Factor the area. Find two numbers that multiply to 3 × 8 = 24 and add to -14.",
                 prompt: "Pick the correct dimensions (length × width):",
                 options: ["A) A = (3x + 2)(x + 4)", "B) A = (9x - 6)(x - 4)", "C) A = (3x - 2)(x - 4)", "D) A = (3x - 4)(x - 2)", "E) x = 4 and x = ⅔"],
-                expression: "3x² - 14x + 8", var: "x",
-                ps_mult: "3 × 8 = 24", ps_add: "-14", ps_nums: "<strong>-12</strong> and <strong>-2</strong>",
-                ps_split: "3x² - 12x - 2x + 8 = 3x(x - 4) - 2(x - 4)",
+                expression: "3x^2 - 14x + 8", var: "x",
+                ps_mult: "3 \\times 8 = 24", ps_add: "-14", ps_nums: "-12 \\ \\text{and} \\ -2",
+                ps_split: "3x^2 - 12x - 2x + 8 = 3x(x - 4) - 2(x - 4)",
                 cc_lt: "3x", cc_lb: "x", cc_rt: "-2", cc_rb: "-4", cc_pt: "-12x", cc_pb: "-2x", cc_sum: "-14x",
                 ans_box: "A = (3x - 2)(x - 4)", row1_f: "3x - 2", row2_f: "x - 4", ans: "C"
             },
@@ -757,9 +757,9 @@
                 hint: "Factor the area. Find two numbers that multiply to 2 × 3 = 6 and add to -7.",
                 prompt: "Pick the correct dimensions (length × width):",
                 options: ["A) A = (2x - 1)(x - 3)", "B) A = (2x + 1)(x + 3)", "C) A = (4x - 2)(x - 3)", "D) A = (2x - 3)(x - 1)", "E) x = 3 and x = ½"],
-                expression: "2x² - 7x + 3", var: "x",
-                ps_mult: "2 × 3 = 6", ps_add: "-7", ps_nums: "<strong>-6</strong> and <strong>-1</strong>",
-                ps_split: "2x² - 6x - x + 3 = 2x(x - 3) - 1(x - 3)",
+                expression: "2x^2 - 7x + 3", var: "x",
+                ps_mult: "2 \\times 3 = 6", ps_add: "-7", ps_nums: "-6 \\ \\text{and} \\ -1",
+                ps_split: "2x^2 - 6x - x + 3 = 2x(x - 3) - 1(x - 3)",
                 cc_lt: "2x", cc_lb: "x", cc_rt: "-1", cc_rb: "-3", cc_pt: "-6x", cc_pb: "-1x", cc_sum: "-7x",
                 ans_box: "A = (2x - 1)(x - 3)", row1_f: "2x - 1", row2_f: "x - 3", ans: "A"
             }
@@ -993,46 +993,62 @@
             document.getElementById("method-toggle-bar").style.display = "flex";
 
             renderActiveMethodSteps();
+            renderMathElements();
         }
 
         function buildSolutionHTMLElements(data) {
-            const targetDiv = document.getElementById("solution-reveal-layer");
+            const targetDiv = document.getElementById("solution-workspace-injected");
             let html = `<h2>Solution for ${data.title}</h2>`;
 
             if (data.type === "numbers") {
                 html += `
                 <div class="step-block common-step">
-                    <span class="step-title">Step 1: What we need</span>
-                    <div class="step-math">${data.expression}</div>
-                    <span class="step-explanation">Find one pair of numbers that fits both rules.</span>
+                    <span class="step-title">Step 1: Identify Target Constraints</span>
+                    <div class="step-math">\\(${data.expression}\\)</div>
+                    <span class="step-explanation">We must find a unique pair of signed integers that satisfies both mathematical constraints simultaneously.</span>
                 </div>
                 <div class="step-block ps-only">
-                    <span class="step-title">Step 2 (Product &amp; Sum): List the factor pairs</span>
-                    <div class="step-math">${data.ps_list}</div>
-                    <span class="step-explanation">Check the factor pairs. The pair that works: <strong>${data.ps_val}</strong>.</span>
+                    <span class="step-title">Step 2 (Product &amp; Sum): Analyze Integer Factor Pairs</span>
+                    <div class="step-math">\\(\\text{Factor combinations of c: } ${data.ps_list}\\)</div>
+                    <span class="step-explanation">Systematically evaluate the possible integer factor pairs of the target product to isolate the pair that yields the correct sum.</span>
+                </div>
+                <div class="step-block ps-only">
+                    <span class="step-title">Step 3 (Product &amp; Sum): Verify the Matching Combination</span>
+                    <div class="step-math">\\(${data.ps_val}\\)</div>
+                    <span class="step-explanation">The verified integer factors satisfy both arithmetic criteria perfectly.</span>
                 </div>
                 <div class="step-block cc-only">
-                    <span class="step-title">Step 2 (Criss-Cross): Use the signs</span>
-                    <div class="step-math">${data.cc_logic}</div>
-                    <span class="step-explanation">The signs narrow it down quickly: <strong>${data.cc_apply}</strong>.</span>
+                    <span class="step-title">Step 2 (Criss-Cross): Apply Signed Property Constraints</span>
+                    <div class="step-math">\\(${data.cc_logic}\\)</div>
+                    <span class="step-explanation">Analyze the mathematical properties of signed numbers to determine the signs of the factors.</span>
+                </div>
+                <div class="step-block cc-only">
+                    <span class="step-title">Step 3 (Criss-Cross): Verify Linear Vector Balance</span>
+                    <div class="step-math">\\(${data.cc_apply}\\)</div>
+                    <span class="step-explanation">Execute algebraic addition to check that the signed combination matches the target sum.</span>
                 </div>`;
             } else if (data.type === "trinomial") {
                 html += `
                 <div class="step-block common-step">
-                    <span class="step-title">Step 1: Look at the expression</span>
-                    <div class="step-math">${data.expression}</div>
-                    <span class="step-explanation">The number in front of x² is 1, so this is a simple trinomial.</span>
+                    <span class="step-title">Step 1: Analyze Polynomial Coefficients</span>
+                    <div class="step-math">\\(${data.expression}\\)</div>
+                    <span class="step-explanation">The leading coefficient is \\(a = 1\\), which classifies this expression as a simple quadratic trinomial.</span>
                 </div>
                 <div class="step-block ps-only">
-                    <span class="step-title">Step 2 (Product &amp; Sum): Find the two numbers</span>
-                    <span class="math-rule">Rule: find two numbers that <strong>multiply to the last term (c)</strong> and <strong>add to the middle number (b)</strong>.</span>
-                    <span class="step-explanation">Two numbers that multiply to <code>${data.ps_mult}</code> and add to <code>${data.ps_add}</code>: ${data.ps_nums}.</span>
+                    <span class="step-title">Step 2 (Product &amp; Sum): Define Product and Sum Conditions</span>
+                    <span class="math-rule">Target Product = constant term \\((c)\\), Target Sum = middle linear coefficient \\((b)\\).</span>
+                    <span class="step-explanation">We require two numbers that multiply to \\(${data.ps_mult}\\) and add to \\(${data.ps_add}\\).</span>
+                </div>
+                <div class="step-block ps-only">
+                    <span class="step-title">Step 3 (Product &amp; Sum): Isolate the Signed Integer Factors</span>
+                    <div class="step-math">\\(\\text{Selected integers: } ${data.ps_nums}\\)</div>
+                    <span class="step-explanation">The unique combination that satisfies both product and sum targets.</span>
                 </div>
                 <div class="step-block cc-only">
-                    <span class="step-title">Step 2 (Criss-Cross): Set up the grid</span>
+                    <span class="step-title">Step 2 (Criss-Cross): Arrange Factors into the Matrix Grid Layout</span>
                     <div class="criss-cross-box">
                         <div class="matrix-grid">
-                            <div>${data.cc_lt}</div>
+                            <div>\\(${data.cc_lt}\\)</div>
                             <div class="svg-intersection-container">
                                 <svg width="70" height="70" viewBox="0 0 70 70" style="overflow: visible;">
                                     <defs><marker id="arrowhead" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb" /></marker></defs>
@@ -1040,34 +1056,50 @@
                                     <line x1="5" y1="60" x2="65" y2="10" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrowhead)" />
                                 </svg>
                             </div>
-                            <div>${data.cc_rt}</div> <div class="grid-arrow-label">&rarr;</div> <div>${data.cc_pt}</div>
-                            <div>${data.cc_lb}</div> <div>${data.cc_rb}</div> <div class="grid-arrow-label">&rarr;</div> <div>${data.cc_pb}</div>
-                            <div class="matrix-total-line"><strong>Sum of Products Verification:</strong> (${data.cc_pt}) + (${data.cc_pb}) = <strong>${data.cc_sum}</strong> (Matches Middle Term!)</div>
+                            <div>\\(${data.cc_rt}\\)</div> <div class="grid-arrow-label">&rarr;</div> <div>\\(${data.cc_pt}\\)</div>
+                            <div>\\(${data.cc_lb}\\)</div> <div>\\(${data.cc_rb}\\)</div> <div class="grid-arrow-label">&rarr;</div> <div>\\(${data.cc_pb}\\)</div>
+                            <div class="matrix-total-line"><strong>Sum of Diagonal Products:</strong> \\((${data.cc_pt}) + (${data.cc_pb}) = ${data.cc_sum}\\)</div>
                         </div>
                     </div>
+                    <span class="step-explanation">Place the factors of the leading coefficient in the first column and the constant term factors in the second column.</span>
+                </div>
+                <div class="step-block cc-only">
+                    <span class="step-title">Step 3 (Criss-Cross): Verify Middle Linear Term Balance</span>
+                    <div class="step-math">\\(${data.cc_sum} = \\text{middle term coefficient}\\)</div>
+                    <span class="step-explanation">Summing cross-multiplied diagonal products matches the linear middle term coefficient, proving the factor matrix configuration.</span>
                 </div>
                 <div class="step-block common-step">
-                    <span class="step-title">Step 3: Read the factors across</span>
-                    <div class="step-math">${data.ans_box}</div>
-                    <span class="step-explanation">Read each row across to get the factors: <code>(${data.row1_f})</code> and <code>(${data.row2_f})</code>.</span>
+                    <span class="step-title">Step 4: Formulate Final Binomial Factors Across Rows</span>
+                    <div class="step-math">\\(${data.ans_box}\\)</div>
+                    <span class="step-explanation">Read the terms horizontally straight across each row of the grid layout matrix to construct the binomial pairs: \\((${data.row1_f})\\) and \\((${data.row2_f})\\).</span>
                 </div>`;
             } else if (data.type === "complex_no_gcf" || data.type === "rectangle_area") {
                 html += `
                 <div class="step-block common-step">
-                    <span class="step-title">Step 1: Look at the expression</span>
-                    <div class="step-math">${data.expression}</div>
-                    <span class="step-explanation">The number in front of x² is more than 1, so this is a complex trinomial.</span>
+                    <span class="step-title">Step 1: Analyze Polynomial Coefficients</span>
+                    <div class="step-math">\\(${data.expression}\\)</div>
+                    <span class="step-explanation">The leading coefficient is \\(a > 1\\), defining this expression as a complex quadratic trinomial requiring advanced breakdown.</span>
                 </div>
                 <div class="step-block ps-only">
-                    <span class="step-title">Step 2 (Product &amp; Sum): Split the middle term</span>
-                    <span class="math-rule">Rule: find two numbers that multiply to <code>a × c</code> (<code>${data.ps_mult}</code>) and add to <code>b</code> (<code>${data.ps_add}</code>).</span>
-                    <span class="step-explanation">The numbers are ${data.ps_nums}. Split the middle term, then group:<br><code>${data.ps_split}</code>.</span>
+                    <span class="step-title">Step 2 (Product &amp; Sum): Calculate Target Decomposition Constraints</span>
+                    <span class="math-rule">Target Product = \\(a \\times c = ${data.ps_mult}\\), Target Sum = middle coefficient \\(b = ${data.ps_add}\\).</span>
+                    <span class="step-explanation">We isolate two integer numbers that meet these criteria simultaneously: \\(${data.ps_nums}\\).</span>
+                </div>
+                <div class="step-block ps-only">
+                    <span class="step-title">Step 3 (Product &amp; Sum): Decompose the Middle Linear Term</span>
+                    <div class="step-math">\\(${data.ps_split.split('=')[0]}\\)</div>
+                    <span class="step-explanation">Decompose the single middle linear term \\(b${data.var}\\) into two separate terms using our discovered signed factors.</span>
+                </div>
+                <div class="step-block ps-only">
+                    <span class="step-title">Step 4 (Product &amp; Sum): Factor the Inside Expression by Grouping Pairs</span>
+                    <div class="step-math">\\(${data.ps_split.includes('=') ? data.ps_split.split('=')[1] : data.ps_split}\\)</div>
+                    <span class="step-explanation">Group the polynomial into two separate pairs, extract the local GCF from each pair, and factor out the common binomial block.</span>
                 </div>
                 <div class="step-block cc-only">
-                    <span class="step-title">Step 2 (Criss-Cross): Set up the grid</span>
+                    <span class="step-title">Step 2 (Criss-Cross): Set up the Cross Multiplications Grid</span>
                     <div class="criss-cross-box">
                         <div class="matrix-grid">
-                            <div>${data.cc_lt}</div>
+                            <div>\\(${data.cc_lt}\\)</div>
                             <div class="svg-intersection-container">
                                 <svg width="70" height="70" viewBox="0 0 70 70" style="overflow: visible;">
                                     <defs><marker id="arrowhead2" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb" /></marker></defs>
@@ -1075,39 +1107,50 @@
                                     <line x1="5" y1="60" x2="65" y2="10" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrowhead2)" />
                                 </svg>
                             </div>
-                            <div>${data.cc_rt}</div> <div class="grid-arrow-label">&rarr;</div> <div>${data.cc_pt}</div>
-                            <div>${data.cc_lb}</div> <div>${data.cc_rb}</div> <div class="grid-arrow-label">&rarr;</div> <div>${data.cc_pb}</div>
-                            <div class="matrix-total-line"><strong>Sum Verification:</strong> (${data.cc_pt}) + (${data.cc_pb}) = <strong>${data.cc_sum}</strong> (Matches Middle Term!)</div>
+                            <div>\\(${data.cc_rt}\\)</div> <div class="grid-arrow-label">&rarr;</div> <div>\\(${data.cc_pt}\\)</div>
+                            <div>\\(${data.cc_lb}\\)</div> <div>\\(${data.cc_rb}\\)</div> <div class="grid-arrow-label">&rarr;</div> <div>\\(${data.cc_pb}\\)</div>
+                            <div class="matrix-total-line"><strong>Sum of Diagonal Products:</strong> \\((${data.cc_pt}) + (${data.cc_pb}) = ${data.cc_sum}\\)</div>
                         </div>
                     </div>
+                    <span class="step-explanation">Map the factor combinations of the leading term in column 1 and the constant term in column 2.</span>
+                </div>
+                <div class="step-block cc-only">
+                    <span class="step-title">Step 3 (Criss-Cross): Validate Matrix Cross Products Sum</span>
+                    <div class="step-math">\\(${data.cc_sum} = \\text{middle term coefficient}\\)</div>
+                    <span class="step-explanation">Cross-multiplying along diagonal vectors confirms that the sum matches the linear middle term coefficient.</span>
                 </div>
                 <div class="step-block common-step">
-                    <span class="step-title">Step 3: Read the factors across</span>
-                    <div class="step-math">${data.ans_box}</div>
-                    <span class="step-explanation">Read each row across to get the factors: <code>(${data.row1_f})</code> and <code>(${data.row2_f})</code>.</span>
+                    <span class="step-title">Step 5: Extract Horizontal Rows as Final Binomial Factors</span>
+                    <div class="step-math">\\(${data.ans_box}\\)</div>
+                    <span class="step-explanation">Assemble the final factored form by reading directly across the horizontal rows of the grid system: \\((${data.row1_f})\\) and \\((${data.row2_f})\\).</span>
                 </div>`;
             } else if (data.type === "complex_with_gcf") {
                 html += `
                 <div class="step-block common-step">
-                    <span class="step-title">Step 1: Take out the GCF first</span>
-                    <div class="step-math">${data.gcf} ( <div class="fraction"><div class="numerator">${data.num1}</div><div class="denominator">${data.gcf}</div></div> + <div class="fraction"><div class="numerator">${data.num2}</div><div class="denominator">${data.gcf}</div></div> + <div class="fraction"><div class="numerator">${data.num3}</div><div class="denominator">${data.gcf}</div></div> )</div>
-                    <span class="step-explanation">All terms divide by <code>${data.gcf}</code>. Taking it out leaves: <strong><code>${data.expression}</code></strong>.</span>
+                    <span class="step-title">Step 1: Identify and Extract the Greatest Common Factor (GCF)</span>
+                    <div class="step-math">\\(${data.gcf} \\left( \\frac{${data.num1}}{${data.gcf}} + \\frac{${data.num2}}{${data.gcf}} + \\frac{${data.num3}}{${data.gcf}} \\right) \\Rightarrow ${data.gcf}(${data.expression})\\)</div>
+                    <span class="step-explanation">All three polynomial coefficients share a common numeric factor. Extracting \\(${data.gcf}\\) leaves a simpler inner trinomial expression.</span>
                 </div>
                 <div class="step-block common-step">
-                    <span class="step-title">Step 2: Look at the inside trinomial</span>
-                    <div class="step-math">${data.expression}</div>
-                    <span class="step-explanation">The number in front of x² is more than 1, so this is a complex trinomial.</span>
+                    <span class="step-title">Step 2: Isolate and Analyze the Remaining Inner Trinomial</span>
+                    <div class="step-math">\\(${data.expression}\\)</div>
+                    <span class="step-explanation">Focus on factoring the quadratic expression enclosed inside the parentheses, where the inner leading coefficient is \\(a = 2\\).</span>
                 </div>
                 <div class="step-block ps-only">
-                    <span class="step-title">Step 3 (Product &amp; Sum): Split the middle term</span>
-                    <span class="math-rule">Rule: find two numbers that multiply to <code>a × c</code> (<code>${data.ps_mult}</code>) and add to <code>b</code> (<code>${data.ps_add}</code>).</span>
-                    <span class="step-explanation">The numbers are ${data.ps_nums}. Split and group inside the brackets:<br><code>${data.ps_split}</code>.</span>
+                    <span class="step-title">Step 3 (Product &amp; Sum): Determine Inner Signed Factors</span>
+                    <span class="math-rule">Inner Target Product \\((a \\times c) = ${data.ps_mult}\\), Inner Target Sum \\((b) = ${data.ps_add}\\).</span>
+                    <span class="step-explanation">The matching integer factors are \\(${data.ps_nums}\\). Split the inner linear term: <br>\\(${data.ps_split}\\).</span>
+                </div>
+                <div class="step-block ps-only">
+                    <span class="step-title">Step 4 (Product &amp; Sum): Factor the Inside Expression by Grouping Pairs</span>
+                    <div class="step-math">\\((${data.row1_f})(${data.row2_f})\\)</div>
+                    <span class="step-explanation">Extract shared elements from grouped pairs to isolate the primary binomial component.</span>
                 </div>
                 <div class="step-block cc-only">
-                    <span class="step-title">Step 3 (Criss-Cross): Inner grid</span>
+                    <span class="step-title">Step 3 (Criss-Cross): Establish the Inner Matrix Grid Layout</span>
                     <div class="criss-cross-box">
                         <div class="matrix-grid">
-                            <div>${data.cc_lt}</div>
+                            <div>\\(${data.cc_lt}\\)</div>
                             <div class="svg-intersection-container">
                                 <svg width="70" height="70" viewBox="0 0 70 70" style="overflow: visible;">
                                     <defs><marker id="arrowhead3" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb" /></marker></defs>
@@ -1115,34 +1158,36 @@
                                     <line x1="5" y1="60" x2="65" y2="10" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrowhead3)" />
                                 </svg>
                             </div>
-                            <div>${data.cc_rt}</div> <div class="grid-arrow-label">&rarr;</div> <div>${data.cc_pt}</div>
-                            <div>${data.cc_lb}</div> <div>${data.cc_rb}</div> <div class="grid-arrow-label">&rarr;</div> <div>${data.cc_pb}</div>
-                            <div class="matrix-total-line"><strong>Sum Verification:</strong> (${data.cc_pt}) + (${data.cc_pb}) = <strong>${data.cc_sum}</strong> (Matches Inner Middle Term!)</div>
+                            <div>\\(${data.cc_rt}\\)</div> <div class="grid-arrow-label">&rarr;</div> <div>\\(${data.cc_pt}\\)</div>
+                            <div>\\(${data.cc_lb}\\)</div> <div>\\(${data.cc_rb}\\)</div> <div class="grid-arrow-label">&rarr;</div> <div>\\(${data.cc_pb}\\)</div>
+                            <div class="matrix-total-line"><strong>Sum of Diagonal Products:</strong> \\((${data.cc_pt}) + (${data.cc_pb}) = ${data.cc_sum}\\)</div>
                         </div>
                     </div>
+                    <span class="step-explanation">Arrange the factors of the simplified inner trinomial coefficients into the vertical check matrix system.</span>
+                </div>
+                <div class="step-block cc-only">
+                    <span class="step-title">Step 4 (Criss-Cross): Verify Inner Linear Term Balance</span>
+                    <div class="step-math">\\(${data.cc_sum} = \\text{inner middle term coefficient}\\)</div>
+                    <span class="step-explanation">Executing cross-multiplication along diagonal vector coordinates confirms a perfect match with the inner linear term.</span>
                 </div>
                 <div class="step-block common-step">
-                    <span class="step-title">Step 4: Put it all together</span>
-                    <div class="step-math">${data.ans_box}</div>
-                    <span class="step-explanation">Read the rows across, then put the GCF <code>${data.gcf}</code> back in front.</span>
+                    <span class="step-title">Step 5: Assemble the Complete Multi-Step Factored Expression</span>
+                    <div class="step-math">\\(${data.ans_box}\\)</div>
+                    <span class="step-explanation">Read horizontal rows to collect binomial factors, and remember to prepend the extracted outer GCF multiplier \\(${data.gcf}\\) out front.</span>
                 </div>`;
             }
 
             html += `
             <div class="final-answer-box">
                 <span class="final-answer-label">Completely Factored Form Reference</span>
-                <span class="final-answer-math">${data.ans_box}</span>
-            </div>
-            <div class="control-panel" id="controls-panel">
-                <button class="btn btn-secondary" id="restart-btn" onclick="restartSolution()">Restart Steps</button>
-                <button class="btn btn-primary" id="next-btn" onclick="showNextStep()">Next Step &rarr;</button>
+                <span class="final-answer-math">\\(${data.ans_box}\\)</span>
             </div>`;
 
             targetDiv.innerHTML = html;
         }
 
         function renderActiveMethodSteps() {
-            const activeContainer = document.getElementById("solution-reveal-layer");
+            const activeContainer = document.getElementById("solution-workspace-injected");
             const allSteps = Array.from(activeContainer.querySelectorAll('.step-block, .final-answer-box'));
             allSteps.forEach(step => step.style.display = 'none');
             
@@ -1185,12 +1230,13 @@
             document.getElementById("mode-ps").classList.toggle("active", methodKey === 'ps');
             document.getElementById("mode-cc").classList.toggle("active", methodKey === 'cc');
             
-            renderActiveMethodSteps();
+            revealSolutionWorkspace();
         }
 
         function restartSolution() {
             questionStates[activeQuestionId].currentStep = 0;
             renderActiveMethodSteps();
+            renderMathElements();
         }
 
         function updateHudScoreboard() {

@@ -755,7 +755,7 @@
                 steps: [
                     { title: "Step 1: Check special format criteria squares", mode: "common", math: "9x^2 = (3x)^2 \\quad\\text{and}\\quad 64 = 8^2", explanation: "Identify both terms as perfect squares separated by a minus sign." },
                     { title: "Step 2 (Product & Sum Split): Decompose terms via decomposition parameters", mode: "ps", math: "\\text{Product} = -576, \\ \\text{Sum} = 0 \\Rightarrow 9x^2 - 24x + 24x - 64 = 3x(3x-8) + 8(3x-8)", explanation: "Expand the middle term to 0x using -24 and 24, then factor by grouping." },
-                    { title: "Step 2 (Criss-Cross Matrix): Map cross-factor elements down vectors", mode: "cc", cc_lt: "3x", cc_lb: "3x", cc_rt: "-8", cc_rb: "+8", cc_pt: "-24x", cc_pb: "+24x", cc_sum: "0x", explanation: "Factor the expression by structuring the parameters in parallel cross validation arrays." },
+                    { title: "Step 2 (Criss-Cross Matrix): Map cross-factor elements down vectors", mode: "cc", math: "\\begin{aligned} &\\text{Set up columns:} \\\\ &\\begin{matrix} 3x \\\\ 3x \\end{matrix} \\ \\begin{matrix} \\nearrow \\\\ \\searrow \\end{matrix} \\ \\begin{matrix} -8 \\\\ +8 \\end{matrix} \\ \\begin{matrix} \\rightarrow \\\\ \\rightarrow \\end{matrix} \\ \\begin{matrix} -24x \\\\ +24x \\end{matrix} \\\\ &\\text{Verification Sum: } -24x + 24x = 0x \\end{aligned}", explanation: "Set up the factoring grid with 3x and 3x on the left, and -8 and +8 on the right." },
                     { title: "Step 3: Collect final tracking binomial combinations", mode: "common", math: "(3x - 8)(3x + 8)", explanation: "Assemble your factors horizontally to write the final expression." }
                 ], ans: "C"
             },
@@ -768,8 +768,8 @@
                 steps: [
                     { title: "Step 1: Verify difference of squares conditions", mode: "common", math: "49x^2 = (7x)^2 \\quad\\text{and}\\quad 121 = 11^2", explanation: "Both terms are perfect squares." },
                     { title: "Step 2 (Product & Sum Split): Expand and group terms", mode: "ps", math: "49x^2 - 77x + 77x - 121 = 7x(7x - 11) + 11(7x - 11)", explanation: "Decompose the middle term to 0x using -77 and 77." },
-                    { title: "Step 2 (Criss-Cross Matrix): Construct intersection validation layout", mode: "cc", cc_lt: "7x", cc_lb: "7x", cc_rt: "-11", cc_rb: "+11", cc_pt: "-77x", cc_pb: "+77x", cc_sum: "0x", explanation: "Map standard factoring layout configurations directly into the intersection matrix configuration grid." },
-                    { title: "Step 3: Assemble factored form", mode: "common", math: "(7x - 11)(7x + 11)", explanation: "Assemble the final factored expression." }
+                    { title: "Step 2 (Criss-Cross Matrix): Construct intersection validation layout", mode: "cc", math: "\\begin{aligned} &\\text{Set up columns:} \\\\ &\\begin{matrix} 7x \\\\ 7x \\end{matrix} \\ \\begin{matrix} \\nearrow \\\\ \\searrow \\end{matrix} \\ \\begin{matrix} -11 \\\\ +11 \\end{matrix} \\ \\begin{matrix} \\rightarrow \\\\ \\rightarrow \\end{matrix} \\ \\begin{matrix} -77x \\\\ +77x \\end{matrix} \\\\ &\\text{Verification Sum: } -77x + 77x = 0x \\end{aligned}", explanation: "Set up the factoring grid with 7x and 7x on the left, and -11 and +11 on the right." },
+                    { title: "Step 3: Assemble factored form", mode: "common", math: "(7x - 11)(7x + 11)", explanation: "Assemble the factors horizontally for the final result." }
                 ], ans: "A"
             },
             u1pt_t6q1: {
@@ -781,7 +781,7 @@
                 steps: [
                     { title: "Step 1: Identify terminal perfect squares properties", mode: "common", math: "\\sqrt{x^2} = x \\quad\\text{and}\\quad \\sqrt{36} = 6 \\Rightarrow 2(x)(6) = 12x", explanation: "The first and last terms are perfect squares, and twice their product matches the middle term." },
                     { title: "Step 2 (Product & Sum Split): Factor using split decomposition metrics", mode: "ps", math: "\\text{Product} = 36, \\ \\text{Sum} = -12 \\Rightarrow x^2 - 6x - 6x + 36 = x(x-6) - 6(x-6)", explanation: "Split the middle term into -6x and -6x, then factor by grouping." },
-                    { title: "Step 2 (Criss-Cross Matrix): Structure parallel validation vectors", mode: "cc", cc_lt: "x", cc_lb: "x", cc_rt: "-6", cc_rb: "-6", cc_pt: "-6x", cc_pb: "-6x", cc_sum: "-12x", explanation: "Set up the grid validation layout maps matching the exact structural linear midsection integers." },
+                    { title: "Step 2 (Criss-Cross Matrix): Structure parallel validation vectors", mode: "cc", math: "\\begin{aligned} &\\text{Set up columns:} \\\\ &\\begin{matrix} x \\\\ x \\end{matrix} \\ \\begin{matrix} \\nearrow \\\\ \\searrow \\end{matrix} \\ \\begin{matrix} -6 \\\\ -6 \\end{matrix} \\ \\begin{matrix} \\rightarrow \\\\ \\rightarrow \\end{matrix} \\ \\begin{matrix} -6x \\\\ -6x \\end{matrix} \\\\ &\\text{Verification Sum: } -6x - 6x = -12x \\end{aligned}", explanation: "Set up the grid with x and x on the left, and -6 and -6 on the right to match the middle term." },
                     { title: "Step 3: Collect matching factors", mode: "common", math: "(x - 6)(x - 6) = (x - 6)^2", explanation: "Combine the identical binomial factors into a single squared term." }
                 ], ans: "B"
             },
@@ -794,7 +794,7 @@
                 steps: [
                     { title: "Step 1: Isolate terminal square parameters", mode: "common", math: "9x^2 = (3x)^2, \\quad 25 = 5^2 \\Rightarrow 2(3x)(5) = 30x", explanation: "Verify the terms fit the perfect square trinomial template." },
                     { title: "Step 2 (Product & Sum Split): Split the linear term and group components", mode: "ps", math: "9x^2 + 15x + 15x + 25 = 3x(3x + 5) + 5(3x + 5)", explanation: "Decompose the middle term into 15x and 15x." },
-                    { title: "Step 2 (Criss-Cross Matrix): Map elements onto vector intersection rows", mode: "cc", cc_lt: "3x", cc_lb: "3x", cc_rt: "+5", cc_rb: "+5", cc_pt: "+15x", cc_pb: "+15x", cc_sum: "+30x", explanation: "Set up the grid validation intersections to evaluate middle coefficients parameters." },
+                    { title: "Step 2 (Criss-Cross Matrix): Map elements onto vector intersection rows", mode: "cc", math: "\\begin{aligned} &\\text{Set up columns:} \\\\ &\\begin{matrix} 3x \\\\ 3x \\end{matrix} \\ \\begin{matrix} \\nearrow \\\\ \\searrow \\end{matrix} \\ \\begin{matrix} +5 \\\\ +5 \\end{matrix} \\ \\begin{matrix} \\rightarrow \\\\ \\rightarrow \\end{matrix} \\ \\begin{matrix} +15x \\\\ +15x \\end{matrix} \\\\ &\\text{Verification Sum: } +15x + 15x = +30x \\end{aligned}", explanation: "Set up the grid with 3x and 3x on the left, and +5 and +5 on the right." },
                     { title: "Step 3: Write down the binomial square", mode: "common", math: "(3x + 5)^2", explanation: "Combine the identical factors to complete the expression." }
                 ], ans: "C"
             },
@@ -807,7 +807,7 @@
                 steps: [
                     { title: "Step 1: Map target numerical conditions", mode: "common", math: "\\text{Product} = -28, \\quad \\text{Sum} = -3", explanation: "Identify the required product and sum based on the expression coefficients." },
                     { title: "Step 2 (Product & Sum Split): Test integers and split parameters", mode: "ps", math: "(-7) \\times 4 = -28 \\quad\\text{and}\\quad (-7) + 4 = -3 \\Rightarrow x^2 - 7x + 4x - 28", explanation: "Identify -7 and 4 as the correct pair to split the middle term." },
-                    { title: "Step 2 (Criss-Cross Matrix): Build parallel cross validation pathways", mode: "cc", cc_lt: "x", cc_lb: "x", cc_rt: "-7", cc_rb: "+4", cc_pt: "-7x", cc_pb: "+4x", cc_sum: "-3x", explanation: "Plot tracking vector parameters inside the crisscross grid validation box framework." },
+                    { title: "Step 2 (Criss-Cross Matrix): Build parallel cross validation pathways", mode: "cc", math: "\\begin{aligned} &\\text{Set up columns:} \\\\ &\\begin{matrix} x \\\\ x \\end{matrix} \\ \\begin{matrix} \\nearrow \\\\ \\searrow \\end{matrix} \\ \\begin{matrix} -7 \\\\ +4 \\end{matrix} \\ \\begin{matrix} \\rightarrow \\\\ \\rightarrow \\end{matrix} \\ \\begin{matrix} -7x \\\\ +4x \\end{matrix} \\\\ &\\text{Verification Sum: } -7x + 4x = -3x \\end{aligned}", explanation: "Set up the grid with x and x on the left, and -7 and +4 on the right." },
                     { title: "Step 3: Construct binomial factor pairs", mode: "common", math: "(x - 7)(x + 4)", explanation: "Assemble your factors horizontally to write the final expression." }
                 ], ans: "A"
             },
@@ -820,7 +820,7 @@
                 steps: [
                     { title: "Step 1: Set up product and sum goals", mode: "common", math: "\\text{Product} = 24, \\quad \\text{Sum} = 11", explanation: "Identify the product and sum requirements." },
                     { title: "Step 2 (Product & Sum Split): Isolate tracking numbers", mode: "ps", math: "8 \\times 3 = 24 \\quad\\text{and}\\quad 8 + 3 = 11 \\Rightarrow x^2 + 8x + 3x + 24", explanation: "Determine that 8 and 3 satisfy the requirements." },
-                    { title: "Step 2 (Criss-Cross Matrix): Map elements onto validation lines", mode: "cc", cc_lt: "x", cc_lb: "x", cc_rt: "+8", cc_rb: "+3", cc_pt: "+8x", cc_pb: "+3x", cc_sum: "+11x", explanation: "Structure coordinates to map corresponding linear interior values." },
+                    { title: "Step 2 (Criss-Cross Matrix): Map elements onto validation lines", mode: "cc", math: "\\begin{aligned} &\\text{Set up columns:} \\\\ &\\begin{matrix} x \\\\ x \\end{matrix} \\ \\begin{matrix} \\nearrow \\\\ \\searrow \\end{matrix} \\ \\begin{matrix} +8 \\\\ +3 \\end{matrix} \\ \\begin{matrix} \\rightarrow \\\\ \\rightarrow \\end{matrix} \\ \\begin{matrix} +8x \\\\ +3x \\end{matrix} \\\\ &\\text{Verification Sum: } +8x + 3x = +11x \\end{aligned}", explanation: "Set up the grid with x and x on the left, and +8 and +3 on the right." },
                     { title: "Step 3: Assemble binomial results", mode: "common", math: "(x + 8)(x + 3)", explanation: "Assemble the final factored expression." }
                 ], ans: "C"
             },
@@ -833,7 +833,7 @@
                 steps: [
                     { title: "Step 1: Calculate target product and sum constraints", mode: "common", math: "\\text{Product (a} \\times \\text{c)} = 2 \\times 3 = 6, \\quad \\text{Sum (b)} = 7", explanation: "Multiply the leading coefficient by the constant term to determine the target product." },
                     { title: "Step 2 (Product & Sum Split): Apply Decomposition terms", mode: "ps", math: "6 \\times 1 = 6 \\ \\text{and} \\ 6 + 1 = 7 \\Rightarrow 2x^2 + 6x + 1x + 3 = 2x(x + 3) + 1(x + 3)", explanation: "Split the middle term into 6x and 1x, then factor by grouping." },
-                    { title: "Step 2 (Criss-Cross Matrix): Execute cross multiplication matrix setup", mode: "cc", cc_lt: "2x", cc_lb: "x", cc_rt: "+1", cc_rb: "+3", cc_pt: "+6x", cc_pb: "+1x", cc_sum: "+7x", explanation: "Align factor elements inside the grid layout to balance matrix verification checks." },
+                    { title: "Step 2 (Criss-Cross Matrix): Execute cross multiplication matrix setup", mode: "cc", math: "\\begin{aligned} &\\text{Set up columns:} \\\\ &\\begin{matrix} 2x \\\\ x \\end{matrix} \\ \\begin{matrix} \\nearrow \\\\ \\searrow \\end{matrix} \\ \\begin{matrix} +1 \\\\ +3 \\end{matrix} \\ \\begin{matrix} \\rightarrow \\\\ \\rightarrow \\end{matrix} \\ \\begin{matrix} +6x \\\\ +1x \\end{matrix} \\\\ &\\text{Verification Sum: } +6x + 1x = +7x \\end{aligned}", explanation: "Set up the grid with 2x and x on the left, and +1 and +3 on the right." },
                     { title: "Step 3: Collect shared bracket components", mode: "common", math: "(2x + 1)(x + 3)", explanation: "Assemble your factors horizontally to write the final expression." }
                 ], ans: "B"
             },
@@ -846,7 +846,7 @@
                 steps: [
                     { title: "Step 1: Establish product and sum goals", mode: "common", math: "\\text{Product} = 5 \\times (-6) = -30, \\quad \\text{Sum} = -13", explanation: "Determine your product and sum targets." },
                     { title: "Step 2 (Product & Sum Split): Split term via grouping pairs", mode: "ps", math: "(-15) \\times 2 = -30 \\ \\text{and} \\ (-15) + 2 = -13 \\Rightarrow 5x^2 - 15x + 2x - 6 = 5x(x - 3) + 2(x - 3)", explanation: "Decompose the middle term using -15 and 2." },
-                    { title: "Step 2 (Criss-Cross Matrix): Plot rows inside grid vectors", mode: "cc", cc_lt: "5x", cc_lb: "x", cc_rt: "+2", cc_rb: "-3", cc_pt: "-15x", cc_pb: "+2x", cc_sum: "-13x", explanation: "Validate diagonal multiplication configurations matching cross boundaries inputs." },
+                    { title: "Step 2 (Criss-Cross Matrix): Plot rows inside grid vectors", mode: "cc", math: "\\begin{aligned} &\\text{Set up columns:} \\\\ &\\begin{matrix} 5x \\\\ x \\end{matrix} \\ \\begin{matrix} \\nearrow \\\\ \\searrow \\end{matrix} \\ \\begin{matrix} +2 \\\\ -3 \\end{matrix} \\ \\begin{matrix} \\rightarrow \\\\ \\rightarrow \\end{matrix} \\ \\begin{matrix} -15x \\\\ +2x \\end{matrix} \\\\ &\\text{Verification Sum: } -15x + 2x = -13x \\end{aligned}", explanation: "Set up the grid with 5x and x on the left, and +2 and -3 on the right." },
                     { title: "Step 3: Group terms completely", mode: "common", math: "(5x + 2)(x - 3)", explanation: "Assemble the final factored expression." }
                 ], ans: "C"
             },
@@ -859,7 +859,7 @@
                 steps: [
                     { title: "Step 1: Extract the numerical GCF multiplier", mode: "common", math: "4(x^2 - 6x + 8)", explanation: "Factor out the common multiplier of 4 from all three terms." },
                     { title: "Step 2 (Product & Sum Split): Decompose the inner expression block", mode: "ps", math: "\\text{Product} = 8, \\ \\text{Sum} = -6 \\Rightarrow 4[x^2 - 4x - 2x + 8] = 4[x(x-4) - 2(x-4)]", explanation: "Find two numbers that multiply to 8 and add to -6 to factor the expression inside the brackets." },
-                    { title: "Step 2 (Criss-Cross Matrix): Run cross calculation layouts inside boundaries", mode: "cc", cc_lt: "x", cc_lb: "x", cc_rt: "-4", cc_rb: "-2", cc_pt: "-2x", cc_pb: "-4x", cc_sum: "-6x", cc_match: "(Matches Inner Middle Term!)", explanation: "Set up the factoring grid inside the parentheses to match the sub-expression values." },
+                    { title: "Step 2 (Criss-Cross Matrix): Run cross calculation layouts inside boundaries", mode: "cc", math: "\\begin{aligned} &\\text{Set up inner columns:} \\\\ &\\begin{matrix} x \\\\ x \\end{matrix} \\ \\begin{matrix} \\nearrow \\\\ \\searrow \\end{matrix} \\ \\begin{matrix} -4 \\\\ -2 \\end{matrix} \\ \\begin{matrix} \\rightarrow \\\\ \\rightarrow \\end{matrix} \\ \\begin{matrix} -2x \\\\ -4x \\end{matrix} \\\\ &\\text{Verification Sum: } -2x - 4x = -6x \\end{aligned}", explanation: "Set up the factoring grid inside the parentheses using x, x, -4, and -2." },
                     { title: "Step 3: Combine all structural components", mode: "common", math: "4(x - 4)(x - 2)", explanation: "Combine the common factor with the binomial pairs for the final result." }
                 ], ans: "A"
             },
@@ -872,7 +872,7 @@
                 steps: [
                     { title: "Step 1: Extract front common numbers", mode: "common", math: "6(x^2 - 1)", explanation: "Factor out the common multiplier of 6." },
                     { title: "Step 2 (Product & Sum Split): Expand simple internal terms", mode: "ps", math: "6[x^2 - 1x + 1x - 1] = 6[x(x - 1) + 1(x - 1)]", explanation: "Rewrite the expression to show the middle terms cancel out." },
-                    { title: "Step 2 (Criss-Cross Matrix): Map structural terms down grid lines", mode: "cc", cc_lt: "x", cc_lb: "x", cc_rt: "-1", cc_rb: "+1", cc_pt: "+1x", cc_pb: "-1x", cc_sum: "0x", cc_match: "(Matches Inner Middle Term!)", explanation: "Set up the inner grid intersection parameters tracking values that evaluate to zero components." },
+                    { title: "Step 2 (Criss-Cross Matrix): Map structural terms down grid lines", mode: "cc", math: "\\begin{aligned} &\\text{Set up inner columns:} \\\\ &\\begin{matrix} x \\\\ x \\end{matrix} \\ \\begin{matrix} \\nearrow \\\\ \\searrow \\end{matrix} \\ \\begin{matrix} -1 \\\\ +1 \\end{matrix} \\ \\begin{matrix} \\rightarrow \\\\ \\rightarrow \\end{matrix} \\ \\begin{matrix} +1x \\\\ -1x \\end{matrix} \\\\ &\\text{Verification Sum: } +1x - 1x = 0x \\end{aligned}", explanation: "Set up the grid with x and x on the left, and -1 and +1 on the right." },
                     { title: "Step 3: Write down the final factors", mode: "common", math: "6(x - 1)(x + 1)", explanation: "Write the final completely factored expression." }
                 ], ans: "C"
             },
@@ -909,7 +909,7 @@
                 steps: [
                     { title: "Step 1: Rearrange equation to equal zero", mode: "common", math: "x^2 - 5x - 14 = 0", explanation: "Move all terms to one side to set up standard form." },
                     { title: "Step 2 (Product & Sum Split): Split middle terms using factors", mode: "ps", math: "(-7) \\times 2 = -14 \\ \\text{and} \\ (-7) + 2 = -5 \\Rightarrow (x - 7)(x + 2) = 0", explanation: "Find two numbers that multiply to -14 and add to -5 to factor the expression." },
-                    { title: "Step 2 (Criss-Cross Matrix): Map equation factoring lines", mode: "cc", cc_lt: "x", cc_lb: "x", cc_rt: "-7", cc_rb: "+2", cc_pt: "-7x", cc_pb: "+2x", cc_sum: "-5x", explanation: "Set up the factoring grid alignment metrics to map values into binomial slots." },
+                    { title: "Step 2 (Criss-Cross Matrix): Map equation factoring lines", mode: "cc", math: "\\begin{aligned} &\\text{Set up columns:} \\\\ &\\begin{matrix} x \\\\ x \\end{matrix} \\ \\begin{matrix} \\nearrow \\\\ \\searrow \\end{matrix} \\ \\begin{matrix} -7 \\\\ +2 \\end{matrix} \\ \\begin{matrix} \\rightarrow \\\\ \\rightarrow \\end{matrix} \\ \\begin{matrix} -7x \\\\ +2x \\end{matrix} \\\\ &\\text{Verification Sum: } -7x + 2x = -5x \\end{aligned}", explanation: "Set up the factoring grid with x, x, -7, and +2." },
                     { title: "Step 3: Solve for x using the zero product property", mode: "common", math: "x - 7 = 0 \\Rightarrow x = 7 \\quad\\text{and}\\quad x + 2 = 0 \\Rightarrow x = -2", explanation: "Set each factor to zero to find the solutions." }
                 ], ans: "C"
             },
@@ -974,7 +974,7 @@
                 steps: [
                     { title: "Step 1: Set expression to zero and divide through by -2", mode: "common", math: "-2(x^2 - 6x + 5) = 0 \\Rightarrow x^2 - 6x + 5 = 0", explanation: "Set the equation to zero and divide out the common factor to simplify." },
                     { title: "Step 2 (Product & Sum Split): Test integer factors for simple trinomials", mode: "ps", math: "(-5) \\times (-1) = 5 \\ \\text{and} \\ (-5) + (-1) = -6 \\Rightarrow (x - 5)(x - 1) = 0", explanation: "Find two numbers that multiply to 5 and add to -6 to factor the expression." },
-                    { title: "Step 2 (Criss-Cross Matrix): Map inner matrix pathways", mode: "cc", cc_lt: "x", cc_lb: "x", cc_rt: "-5", cc_rb: "-1", cc_pt: "-1x", cc_pb: "-5x", cc_sum: "-6x", cc_match: "(Matches Inner Middle Term!)", explanation: "Set up the inner grid boundaries intersection array patterns tracking elements values inside equations." },
+                    { title: "Step 2 (Criss-Cross Matrix): Map inner matrix pathways", mode: "cc", math: "\\begin{aligned} &\\text{Set up columns:} \\\\ &\\begin{matrix} x \\\\ x \\end{matrix} \\ \\begin{matrix} \\nearrow \\\\ \\searrow \\end{matrix} \\ \\begin{matrix} -5 \\\\ -1 \\end{matrix} \\ \\begin{matrix} \\rightarrow \\\\ \\rightarrow \\end{matrix} \\ \\begin{matrix} -1x \\\\ -5x \\end{matrix} \\\\ &\\text{Verification Sum: } -1x - 5x = -6x \\end{aligned}", explanation: "Set up the grid with x and x on the left, and -5 and -1 on the right." },
                     { title: "Step 3: Solve both individual binomial roots", mode: "common", math: "x - 5 = 0 \\Rightarrow x = 5 \\quad\\text{and}\\quad x - 1 = 0 \\Rightarrow x = 1", explanation: "Set each factor to zero to find the final break-even prices." }
                 ], ans: "A"
             }
@@ -1212,30 +1212,8 @@
                 
                 html += `
                 <div class="step-block ${stepClass}" style="display:none;">
-                    <span class="step-title">${step.title}</span>`;
-                
-                if (step.mode === "cc" && step.cc_lt) {
-                    html += `
-                    <div class="criss-cross-box">
-                        <div class="matrix-grid">
-                            <div>${step.cc_lt}</div>
-                            <div class="svg-intersection-container">
-                                <svg width="70" height="70" viewBox="0 0 70 70" style="overflow: visible;">
-                                    <defs><marker id="arrowhead_u1pt" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb" /></marker></defs>
-                                    <line x1="5" y1="10" x2="65" y2="60" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrowhead_u1pt)" />
-                                    <line x1="5" y1="60" x2="65" y2="10" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrowhead_u1pt)" />
-                                </svg>
-                            </div>
-                            <div>${step.cc_rt}</div> <div class="grid-arrow-label">&rarr;</div> <div>${step.cc_pt}</div>
-                            <div>${step.cc_lb}</div> <div>${step.cc_rb}</div> <div class="grid-arrow-label">&rarr;</div> <div>${step.cc_pb}</div>
-                            <div class="matrix-total-line"><strong>Sum Verification:</strong> (${step.cc_pt}) + (${step.cc_pb}) = <strong>${step.cc_sum}</strong> ${step.cc_match || '(Matches Middle Term!)'}</div>
-                        </div>
-                    </div>`;
-                } else {
-                    html += `<div class="step-math">$$\\small ${step.math}$$</div>`;
-                }
-                
-                html += `
+                    <span class="step-title">${step.title}</span>
+                    <div class="step-math">$$\\small ${step.math}$$</div>
                     <span class="step-explanation">${step.explanation}</span>
                 </div>`;
             });
